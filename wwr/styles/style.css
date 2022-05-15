@@ -34,10 +34,11 @@ main section {
   height: 725px;
   background-color: #9ed8db;
 }
-
+/*adding a background color to the body*/
 body {
   background-color: #e9fff9;
 }
+/*adding a background color to the header*/
 header {
   background-color: rgb(19, 111, 99);
 }
