@@ -1,16 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@200;400&display=swap');
+
+/* Font variables */
+:root{
+--heading-font: Lato, sans-serif;
+--paragraph-font: Lato, Poppins, sans-serif;
+--button-bcg-color: rgb(158, 216, 219);
+--image-border-clr: rgb(158, 216, 219);
+--header-bg-clr: rgba(19, 111, 99, 1);
+--footer-bg-clr: rgba(19, 111, 99, 1);
+}
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
+  font-family: var(--paragraph-font)
 }
+
 .logo,
 .icon {
   width: 80px;
+}
+#logo-link{padding-top: 5px;}
+.icon{
+  padding-top: 10px;
 }
 
 nav a {
   text-align: center;
   color: #e9fff9;
   text-decoration: none;
+  padding: 35px;
 }
 
 #hero-img {
@@ -29,18 +48,22 @@ nav a {
 main section {
   text-align: center;
 }
+main section img{box-sizing: border-box;}
 
 #background {
   height: 725px;
-  background-color: #9ed8db;
+  background-color: rgba(158, 216, 219, .5);
 }
 /*adding a background color to the body*/
 body {
   background-color: #e9fff9;
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
 }
 /*adding a background color to the header*/
 header {
-  background-color: rgb(19, 111, 99);
+  background-color: var(--header-bg-clr);
 }
 nav a:hover {
   background-color: #e9fff9;
@@ -48,9 +71,13 @@ nav a:hover {
 }
 .book,
 .join {
-  background-color: #9ed8db;
+  background-color: var(--button-bcg-color);
   color: rgba(19, 111, 99, 0.9);
   text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 .book:hover,
 .join:hover {
@@ -58,11 +85,27 @@ nav a:hover {
   color: #e9fff9;
 }
 
-.msg {
-  background-color: #9ed8db;
+.rivers-card, .camping-card, .rapids-card{margin: 200px 0;}
+
+.home-title{
+  font-family: var(--heading-font);
+  font-size: 2em;
 }
+
+.msg {
+  background-color: rgba(158, 216, 219, .5);
+  line-height: 1.5em;
+  padding: 35px;
+}
+
+.card-img{
+  border: 10px solid var(--image-border-clr);
+}
+
 footer {
-  background-color: rgb(19, 111, 99);
+  background-color: var(--footer-bg-clr);
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 
 footer a:hover {
@@ -71,17 +114,28 @@ footer a:hover {
 
 .home-title {
   color: #1d3354;
+  margin-top: 10px;
 }
 h4 {
   color: black;
 }
 
+h2{
+  margin: 0;
+}
+
 .msg h2 {
   color: black;
+  font-family: var(--heading-font)
 }
 .msg p {
   color: black;
+  font-size: .8em;
+  padding-bottom: 15px;
 }
+
+footer .social img{padding-top: 15px;}
+
 footer h3 {
   color: #0d1321;
 }
